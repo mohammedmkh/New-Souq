@@ -81,6 +81,10 @@ class StateApiController extends Controller
 
         $state = States::where('id',$id)->first();
         if( $state){
+
+            if(isset($request->city_id))
+                $state->city_id = $request->city_id ;
+
             $state->name = $request->name ;
             $state->save();
 

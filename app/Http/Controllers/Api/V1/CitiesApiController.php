@@ -79,6 +79,10 @@ class CitiesApiController extends Controller
 
         $city = Cities::where('id',$id)->first();
         if( $city){
+
+            if(isset($request->country_id))
+                $city->country_id = $request->country_id ;
+
             $city->name = $request->name ;
             $city->save();
 

@@ -9,7 +9,7 @@ Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1', 'middle
     Route::get('marketcategories/{id}' , 'MarketCategoryApiController@show');
     Route::delete('marketcategory' , 'MarketCategoryApiController@delete');
     Route::post('marketcategory' , 'MarketCategoryApiController@store');
-    Route::put('marketcategory' , 'MarketCategoryApiController@update');
+    Route::put('marketcategory/{id}' , 'MarketCategoryApiController@update');
 
 
     Route::resource('countries' , 'CountriesApiController');

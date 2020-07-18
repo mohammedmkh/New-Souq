@@ -83,7 +83,7 @@ class MarketCategoryApiController extends Controller
     }
 
 
-    public function update(Request $request){
+    public function update(Request $request ,$id){
 
         $user = Auth::guard('api')->user();
         if(!$user->is_admin()){
@@ -92,8 +92,8 @@ class MarketCategoryApiController extends Controller
         }
 
         $message= __('api.success');
-        $market_category = MarketCategory::where('id' , $request->id)->update($request->all());
-        //$market_category
+        $market_category = MarketCategory::where('id' , $id)->update($request->all());
+
 
         return jsonResponse(0 , $message  , null , 200 );
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Api\V1;
+namespace App\Http\Controllers\Api\Users;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreUserRequest;
@@ -25,6 +25,8 @@ class UsersApiController extends Controller
     public function login(Request $request){
 
 
+        //dd('mm');
+
 
         $req = Request::create('/oauth/token', 'POST', $request->all());
         $req->request->add([
@@ -38,10 +40,10 @@ class UsersApiController extends Controller
 
 
         $res = app()->handle($req);
+
         $json =  (array) json_decode($res->getContent());
 
 
-        // dd($json);
 
         if(isset($json['error'])){
             $message = __('api.wrong_login') ;

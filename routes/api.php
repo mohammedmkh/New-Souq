@@ -54,12 +54,13 @@ Route::group(['prefix' => 'market', 'as' => 'api.', 'namespace' => 'Api\Market',
 Route::group(['prefix' => 'motors', 'as' => 'api.', 'namespace' => 'Api\Motors', 'middleware' => ['auth:api']], function () {
 
 
-     Route::get('schools' , 'MotorsApiController@allSchools');
-     Route::get('statistic' , 'MotorsApiController@statistic');
-     Route::get('allstudents' , 'MotorsApiController@getAllStudents');
-     Route::post('getstudentsafter', 'MotorsApiController@getStudentsAfter');
+      Route::get('schools' , 'MotorsApiController@allSchools');
+      Route::get('statistic' , 'MotorsApiController@statistic');
+      Route::get('allstudents' , 'MotorsApiController@getAllStudents');
+      Route::post('getstudentsafter', 'MotorsApiController@getStudentsAfter');
+      Route::get('getexamresults/{studentid}', 'MotorsApiController@getExamResults');
 
-
+    Route::post('updateSchool', 'MotorsApiController@updateSchool');
 
 
 });

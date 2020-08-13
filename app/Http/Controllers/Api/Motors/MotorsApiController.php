@@ -9,6 +9,7 @@ use App\Http\Controllers\Traits\MediaUploadingTrait;
 use App\Http\Requests\StoreProductRequest;
 use App\Http\Requests\UpdateProductRequest;
 use App\Http\Resources\Admin\ProductResource;
+use App\Motors\School;
 use App\Product;
 use Carbon\Carbon;
 use Gate;
@@ -103,6 +104,54 @@ class MotorsApiController extends Controller
 
                     }
 
+
+
+        $message = __('api.error');
+        return jsonResponse(1 , $message  ,  null , 200 );
+
+    }
+
+
+    public function getExamResults($studentid){
+
+
+        $total_exams  = DB::connection('mysql_motors')
+            ->table('exam_marks')->where('student_id' , $studentid)->orderBy('id' , 'desc')->get();
+
+
+
+        $message= __('api.success');
+        return jsonResponse(0 , $message  , $total_exams   , 200 );
+    }
+
+
+
+    public function updateSchool(Request $request){
+        $school = School::where('id' , $request->school_id)->first();
+        if($school){
+            $school->update($request->all());
+
+            if($request->is_oral_app == 1){
+                $school->expire_date_oral	= null ;
+                $school->save();
+            }
+
+            if($request->is_oral_app == 2){
+                $school->expire_date_oral	= $request->expire_date_oral ;
+                $school->expire_date = null ;
+                $school->save();
+            }
+
+            if($request->is_oral_app == 3){
+                $school->expire_date_oral	= $request->expire_date_oral ;
+                $school->expire_date = $request->expire_date ;
+                $school->save();
+            }
+
+
+            $message= __('api.success');
+            return jsonResponse(0 , $message  , $school   , 200 );
+        }
 
 
         $message = __('api.error');

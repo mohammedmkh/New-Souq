@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b2515c3d-5c42-4c7b-939d-e2b4f5061f86" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/Motors/MotorsApiController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/Motors/MotorsApiController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/Users/UsersApiController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/Users/UsersApiController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/api.php" afterPath="$PROJECT_DIR$/routes/api.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,25 +15,35 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="62" column="65" lean-forward="false" selection-start-line="62" selection-start-column="53" selection-end-line="62" selection-end-column="65" />
+            <state relative-caret-position="120">
+              <caret line="8" column="53" lean-forward="false" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="53" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MotorsApiController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UsersApiController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/Users/UsersApiController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="49">
+              <caret line="87" column="43" lean-forward="false" selection-start-line="87" selection-start-column="43" selection-end-line="87" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MotorsApiController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/Motors/MotorsApiController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="133" column="55" lean-forward="false" selection-start-line="133" selection-start-column="55" selection-end-line="133" selection-end-column="55" />
+            <state relative-caret-position="393">
+              <caret line="147" column="31" lean-forward="false" selection-start-line="147" selection-start-column="31" selection-end-line="147" selection-end-column="31" />
               <folding>
-                <marker date="1597298557271" expanded="true" signature="663:722" ph="select * fro... schools" />
-                <marker date="1597298557271" expanded="true" signature="4729:4733" ph="{...}" />
+                <marker date="1597299242881" expanded="true" signature="663:722" ph="select * fro... schools" />
+                <marker date="1597299242881" expanded="true" signature="5313:5317" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -62,7 +72,6 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/Locations/CountriesApiController.php" />
         <option value="$PROJECT_DIR$/app/Countries.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/UsersApiController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/Users/UsersApiController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/Market/CurrenciesApiController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/Market/MarketCategoryApiController.php" />
         <option value="$PROJECT_DIR$/.env" />
@@ -75,8 +84,9 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/Market/SpecificationGroupApiController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/Market/SpecificationValueApiController.php" />
         <option value="$PROJECT_DIR$/config/app.php" />
-        <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/Motors/MotorsApiController.php" />
+        <option value="$PROJECT_DIR$/routes/api.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/Users/UsersApiController.php" />
       </list>
     </option>
   </component>
@@ -92,7 +102,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="739" />
+    <option name="height" value="740" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -110,8 +120,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -244,7 +254,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Motors" />
+              <option name="myItemId" value="Users" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -356,18 +366,20 @@
       <workItem from="1595747491481" duration="2602000" />
       <workItem from="1595936475079" duration="1936000" />
       <workItem from="1596021092010" duration="293000" />
-      <workItem from="1597298321942" duration="725000" />
+      <workItem from="1597298321942" duration="1165000" />
+      <workItem from="1597301764490" duration="121000" />
+      <workItem from="1597853443918" duration="1013000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13287000" />
+    <option name="totallyTimeSpent" value="14861000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="739" extended-state="1" />
+    <frame x="0" y="23" width="1280" height="740" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28594506" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2956381" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -375,7 +387,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41095892" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40895063" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -445,8 +457,8 @@
         <state relative-caret-position="690">
           <caret line="59" column="28" lean-forward="false" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
           <folding>
-            <marker date="1597298557271" expanded="true" signature="663:722" ph="select * fro... schools" />
-            <marker date="1597298557271" expanded="true" signature="4729:4733" ph="{...}" />
+            <marker date="1597299242881" expanded="true" signature="663:722" ph="select * fro... schools" />
+            <marker date="1597299242881" expanded="true" signature="5313:5317" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -638,13 +650,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UsersApiController.php" />
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/Users/UsersApiController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/Market/CurrenciesApiController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -729,22 +734,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/Motors/MotorsApiController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="147" column="31" lean-forward="false" selection-start-line="147" selection-start-column="31" selection-end-line="147" selection-end-column="31" />
+          <folding>
+            <marker date="1597299242881" expanded="true" signature="663:722" ph="select * fro... schools" />
+            <marker date="1597299242881" expanded="true" signature="5313:5317" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="62" column="65" lean-forward="false" selection-start-line="62" selection-start-column="53" selection-end-line="62" selection-end-column="65" />
+        <state relative-caret-position="120">
+          <caret line="8" column="53" lean-forward="false" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/Motors/MotorsApiController.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/Users/UsersApiController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="133" column="55" lean-forward="false" selection-start-line="133" selection-start-column="55" selection-end-line="133" selection-end-column="55" />
-          <folding>
-            <marker date="1597298557271" expanded="true" signature="663:722" ph="select * fro... schools" />
-            <marker date="1597298557271" expanded="true" signature="4729:4733" ph="{...}" />
-          </folding>
+        <state relative-caret-position="49">
+          <caret line="87" column="43" lean-forward="false" selection-start-line="87" selection-start-column="43" selection-end-line="87" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>

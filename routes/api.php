@@ -6,6 +6,7 @@
 Route::group(['prefix' => 'users', 'as' => 'api.', 'namespace' => 'Api\Users'], function () {
 
     Route::post('login' , 'UsersApiController@login');
+    Route::post('signup' , 'UsersApiController@signUp');
 
 });
 

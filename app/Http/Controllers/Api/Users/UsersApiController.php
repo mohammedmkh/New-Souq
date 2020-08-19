@@ -16,6 +16,38 @@ class UsersApiController extends Controller
 {
 
 
+    public function  signUp(Request $request){
+
+        $user_email_exit = User::where('email' ,$request->email)->first();
+        if($user_email_exit){
+            $message = __('api.email_is_exist');
+            return jsonResponse(1 , $message  , null , 200 );
+        }
+
+        $user_email_exit = User::where('phone' ,$request->phone)->first();
+        if($user_email_exit){
+            $message = __('api.phone_is_exist');
+            return jsonResponse(1 , $message  , null , 200 );
+        }
+
+
+        $user = new User();
+        $user->name = $request->first_name ;
+        $user->family_name = $request->family_name ;
+        $user->email = $request->email ;
+        $user->phone = $request->phone ;
+        $user->gender = $request->gender ;
+        $user->birthday = $request->birthday ;
+        $user->password = bcrypt($request->password);
+        $user->save();
+
+      //  $message = __('api.success');
+        return $this->login($request);
+
+
+
+    }
+
     public  function user(){
         $user = Auth::guard('api')->user();
         $message = __('api.success');
@@ -25,7 +57,7 @@ class UsersApiController extends Controller
     public function login(Request $request){
 
 
-        //dd('mm');
+
 
 
         $req = Request::create('/oauth/token', 'POST', $request->all());
@@ -33,7 +65,7 @@ class UsersApiController extends Controller
             'grant_type'    => $request->grant_type,
             'client_id'     => $request->client_id,
             'client_secret' => $request->client_secret,
-            'username'      => $request->username,
+            'username'      => $request->username?$request->username :$request->email,
             'password'      => $request->password,
             'scope'         => null,
         ]);
@@ -52,7 +84,8 @@ class UsersApiController extends Controller
 
         //return response( $json );
 
-        $user = User::where('email' ,$request->username)->first();
+        $email = $request->username ? $request->username : $request->email ;
+        $user = User::where('email' ,$email)->first();
 
         /*
         Devicetoken::where('device_token',  $request->device_token )->delete();

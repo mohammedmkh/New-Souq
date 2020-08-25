@@ -47,7 +47,7 @@ Route::group(['prefix' => 'market', 'as' => 'api.', 'namespace' => 'Api\Market',
     Route::resource('specificationGroup' , 'SpecificationGroupApiController');
     Route::resource('specificationValue' , 'SpecificationValueApiController');
 
-
+    Route::resource('stores' , 'StoresApiController');
 
 });
 

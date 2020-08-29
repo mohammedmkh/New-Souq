@@ -25,7 +25,9 @@ class StoresApiController extends Controller
 
         // dd('mm');
         $message = __('api.success');
-        $currencies = Stores::get();
+        $user = Auth::guard('api')->user();
+
+        $currencies = Stores::where('creator_id' , $user->id)->get();
 
         return jsonResponse(0 , $message  , $currencies , 200 );
 

@@ -26,6 +26,7 @@ class StoresDB extends Migration
             $table->integer('working_times_info_id')->nullable();
             $table->integer('shipping_info_id')->nullable();
             $table->integer('location_info_id')->nullable();
+            $table->integer('default-currency-id')->nullable();
 
             $table->timestamps();
             $table->softDeletes();

@@ -1,27 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ChangeListManager">
-    <list default="true" id="b2515c3d-5c42-4c7b-939d-e2b4f5061f86" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/New-Souq.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/New-Souq.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Stores.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Stores.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_07_11_000007_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_07_11_000007_create_products_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_25_100600_stores_d_b.php" beforeDir="false" />
-    </list>
-    <option name="SHOW_DIALOG" value="false" />
-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
-    <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
-    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution />
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="PhpIncludePathManager">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
@@ -158,74 +137,10 @@
       <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
     </include_path>
   </component>
-  <component name="ProjectId" id="1gm2Ms4oHK9EqIZUJ6LDFgVpQ2b" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
-  </component>
-  <component name="RunManager">
-    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner scope="XML" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
-      <method v="2" />
-    </configuration>
-  </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
-  <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="b2515c3d-5c42-4c7b-939d-e2b4f5061f86" name="Default" comment="" />
-      <created>1595071361051</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1595071361051</updated>
-      <workItem from="1595071362858" duration="794000" />
-      <workItem from="1595104454374" duration="531000" />
-      <workItem from="1595343052298" duration="928000" />
-      <workItem from="1595439820433" duration="2358000" />
-      <workItem from="1595485475787" duration="2982000" />
-      <workItem from="1595509043749" duration="138000" />
-      <workItem from="1595747491481" duration="2602000" />
-      <workItem from="1595936475079" duration="1936000" />
-      <workItem from="1596021092010" duration="293000" />
-      <workItem from="1597298321942" duration="1165000" />
-      <workItem from="1597301764490" duration="121000" />
-      <workItem from="1597853443918" duration="1651000" />
-      <workItem from="1598338915650" duration="1543000" />
-      <workItem from="1598508600141" duration="227000" />
-      <workItem from="1598705428872" duration="1740000" />
-      <workItem from="1598707258013" duration="1394000" />
-      <workItem from="1598709122559" duration="1014000" />
-      <workItem from="1598719388827" duration="2156000" />
-      <workItem from="1598722315016" duration="884000" />
-      <workItem from="1598767339226" duration="1733000" />
-      <workItem from="1598769130180" duration="1791000" />
-      <workItem from="1598770955299" duration="1441000" />
-    </task>
-    <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1598709662970">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1598709662970" />
+  <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />
+  <component name="PhpUnit">
+    <phpunit_settings>
+      <PhpUnitSettings configuration_file_path="$PROJECT_DIR$/phpunit.xml" custom_loader_path="$PROJECT_DIR$/vendor/autoload.php" use_configuration_file="true" />
+    </phpunit_settings>
   </component>
 </project>
